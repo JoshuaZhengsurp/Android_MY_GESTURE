@@ -1,0 +1,23 @@
+<resources>
+  <string name="app_name">My Gesture</string>
+  <string name="choose">选择</string>
+  
+  <!-- 手势选择界面 -->
+  <string name="right_swipe">右滑</string>
+  <string name="tab_operation">操作</string>
+  <string name="tab_third_party">第三方应用</string>
+  <string name="tab_system">系统应用</string>
+  <string name="tab_shortcut">快捷方式</string>
+  
+  <!-- 操作选项 -->
+  <string name="back">返回</string>
+  <string name="home">主页(HOME)</string>
+  <string name="recent_tasks">最近任务</string>
+  <string name="expand_notification">展开通知</string>
+  <string name="quick_settings">快速设置</string>
+<!--  <string name="power_menu">电源菜单</string>-->
+  <string name="split_screen">打开蓝牙</string>
+  <string name="lock_screen">锁屏(9.0+)</string>
+  <string name="screenshot">系统截屏(9.0+)</string>
+  <string name="close_gesture_temp">关闭手势</string>
+</resources>

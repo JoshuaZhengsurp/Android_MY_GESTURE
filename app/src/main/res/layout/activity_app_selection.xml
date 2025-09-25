@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择要跳转的应用"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <!-- 搜索框 -->
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索应用..."
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search_box_background" />
+
+    <!-- 应用数量统计 -->
+    <TextView
+        android:id="@+id/textView_app_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在加载应用列表..."
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:padding="4dp" />
+
+    <!-- 选项卡容器 -->
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 选项卡标签 -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 选项卡内容 -->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- 所有应用选项卡 -->
+                <LinearLayout
+                    android:id="@+id/tab_all_apps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listView_all_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="1dp"
+                        android:fastScrollEnabled="true" />
+
+                </LinearLayout>
+
+                <!-- 第三方应用选项卡 -->
+                <LinearLayout
+                    android:id="@+id/tab_third_party_apps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listView_third_party_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="1dp"
+                        android:fastScrollEnabled="true" />
+
+                </LinearLayout>
+
+                <!-- 系统应用选项卡 -->
+                <LinearLayout
+                    android:id="@+id/tab_system_apps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listView_system_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="1dp"
+                        android:fastScrollEnabled="true" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="Base.Theme.MyGesture" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Customize your light theme here. -->
+     <item name="colorPrimary">@color/cardview_light_background</item>
+  </style>
+
+  <style name="Theme.MyGesture" parent="Base.Theme.MyGesture"/>
+
+  <!-- DrawActivity专用主题，有ActionBar -->
+  <style name="Theme.DrawActivity" parent="Theme.Material3.DayNight">
+    <!-- 可以在这里自定义DrawActivity的样式 -->
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+  </style>
+</resources>

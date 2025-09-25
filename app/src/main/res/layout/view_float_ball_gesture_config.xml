@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 悬浮球标题 -->
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="悬浮球"
+      android:textSize="18sp"
+      android:textColor="#333333"
+      android:textStyle="bold"
+      android:layout_marginBottom="8dp" />
+
+    <!-- 悬浮球控制按钮 -->
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启用: "
+        android:textSize="16sp"
+        android:textColor="#333333" />
+
+      <Switch
+        android:id="@+id/switch_floating_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp" />
+
+      <Button
+        android:id="@+id/btn_floating_ball_permission"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="权限设置"
+        android:textSize="12sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="#00BCD4"
+        android:padding="8dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:id="@+id/gesture_config_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone">
+
+      <!-- 手势功能列表 -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F8F8F8"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- 右滑 -->
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical">
+
+          <TextView
+            android:id="@+id/swipe_horizontal_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="点击"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+          <TextView
+            android:id="@+id/tv_swipe_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose"
+            android:textSize="16sp"
+            android:textColor="#00BCD4"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        </LinearLayout>
+
+        <!-- 上滑 -->
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="双击"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+          <TextView
+            android:id="@+id/tv_swipe_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose"
+            android:textSize="16sp"
+            android:textColor="#00BCD4"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        </LinearLayout>
+
+        <!-- 下滑 -->
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="长按"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+          <TextView
+            android:id="@+id/tv_swipe_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose"
+            android:textSize="16sp"
+            android:textColor="#00BCD4"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>

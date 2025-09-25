@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击按钮测试截图功能"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"
+        android:background="@android:color/system_neutral1_100" />
+
+    <Button
+        android:id="@+id/screenshot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试截图"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="说明：\n1. 点击按钮会请求截图权限\n2. 授权后会自动截图\n3. 截图保存在Pictures/Screenshots目录\n4. 使用MediaProjectionManager实现"
+        android:textSize="14sp"
+        android:textColor="@android:color/system_neutral1_600"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>

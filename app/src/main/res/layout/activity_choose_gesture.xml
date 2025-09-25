@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray"
+    tools:context=".gesture.ChooseGestureActivity">
+
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/right_swipe"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="40dp" />
+
+    </LinearLayout>
+
+    <!-- 标签页 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tab_operation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tab_operation"
+            android:textSize="14sp"
+            android:textColor="@color/primary_green"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tab_third_party"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tab_third_party"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tab_system"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tab_system"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tab_shortcut"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/tab_shortcut"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/text_secondary"-->
+<!--            android:gravity="center"-->
+<!--            android:background="?attr/selectableItemBackground" />-->
+
+    </LinearLayout>
+
+    <!-- 标签页下划线 -->
+<!--    <View-->
+<!--        android:id="@+id/tab_indicator"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/primary_green"/>-->
+
+    <!-- 列表容器 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/divider_gray"
+            android:dividerHeight="1dp"
+            android:paddingTop="8dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

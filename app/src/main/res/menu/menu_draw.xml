@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 清空操作 -->
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="清空"
+        app:showAsAction="ifRoom" />
+
+    <!-- 保存操作 -->
+<!--    <item-->
+<!--        android:id="@+id/action_save"-->
+<!--        android:icon="@android:drawable/ic_menu_save"-->
+<!--        android:title="保存"-->
+<!--        app:showAsAction="ifRoom" />-->
+
+</menu>

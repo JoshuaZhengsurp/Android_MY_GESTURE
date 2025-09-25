@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Policies that this device admin component requires -->
+    <uses-policies>
+        <!-- Allows the device admin to force lock the device -->
+        <force-lock />
+        <!-- Allows the device admin to wipe the data on the device -->
+<!--        <wipe-data />-->
+    </uses-policies>
+</device-admin>
