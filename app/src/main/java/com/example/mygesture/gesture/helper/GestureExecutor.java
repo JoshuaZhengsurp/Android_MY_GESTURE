@@ -14,6 +14,7 @@ import com.example.mygesture.manager.AppManager;
 
 /**
  * 手势执行器 - 负责执行各种手势动作
+ * todo：后续将手势回调执行收束到这个类里
  */
 public class GestureExecutor {
     private static final String TAG = "GestureExecutor";
@@ -31,9 +32,6 @@ public class GestureExecutor {
 
     /**
      * 执行手势动作
-     * @param edgeType 边缘类型
-     * @param gestureType 手势类型
-     * @return 是否执行成功
      */
     public boolean executeGesture(String edgeType, String gestureType) {
         String key = getGestureKey(edgeType, gestureType);
